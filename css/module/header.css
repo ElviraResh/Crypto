@@ -1,0 +1,23 @@
+.header {
+  background-color: #ffffff;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.navigation__list {
+  display: flex;
+  align-items: center;
+}
+
+.navigation__item {
+  margin-right: 43px;
+}
+
+.navigation__item:last-child {
+  margin-right: 0;
+}
