@@ -1,14 +1,15 @@
-html {
+.page {
   box-sizing: border-box;
 }
-*, *::before, *::after {
-  box-sizing:inherit;
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
-body {
-  min-height: 320px;
+.page-body {
+  min-width: 320px;
   min-height: 100vh;
-  font-family: inter, sans-serif;
+  font-family: Inter, sans-serif;
 }
 
 img, svg {
@@ -33,7 +34,7 @@ ul {
   margin: 0;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, h4, p {
   margin: 0;
 }
 
@@ -41,4 +42,22 @@ h1, h2, h3, p {
   max-width: 1240px;
   margin: 0 auto;
   padding: 0 30px;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 840px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 740px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
 }
